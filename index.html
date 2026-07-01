@@ -49,6 +49,12 @@
     /* hero CTAs: stack full-width so each label stays on one line */
     section [data-intro][data-delay="740"]{ width: 100% !important; flex-direction: column !important; gap: 12px !important; }
     section [data-intro][data-delay="740"] a{ width: 100% !important; text-align: center !important; }
+    /* THE WORK photo: light scrim at the bottom so the caption stays readable */
+    section [data-reveal="mask"]::after{
+      content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 62%;
+      background: linear-gradient(0deg, rgba(245,246,248,.94), rgba(245,246,248,.6) 42%, transparent);
+      z-index: 1; pointer-events: none;
+    }
   }
   /* Small phones: a touch smaller for the longest headings */
   @media (max-width: 420px){
