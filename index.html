@@ -46,9 +46,9 @@
     /* "A DAY" timeline: narrower time column on small screens */
     section [style*="grid-template-columns:120px 1fr"]{ grid-template-columns: 84px 1fr !important; gap: 18px !important; }
     section [style*="grid-template-columns:120px 1fr"] > div:first-child{ font-size: 22px !important; }
-    /* hero CTAs: full-width, easy to tap */
-    section [data-intro][data-delay="740"]{ width: 100% !important; }
-    section [data-intro][data-delay="740"] a{ flex: 1 1 auto !important; text-align: center !important; }
+    /* hero CTAs: stack full-width so each label stays on one line */
+    section [data-intro][data-delay="740"]{ width: 100% !important; flex-direction: column !important; gap: 12px !important; }
+    section [data-intro][data-delay="740"] a{ width: 100% !important; text-align: center !important; }
   }
   /* Small phones: a touch smaller for the longest headings */
   @media (max-width: 420px){
