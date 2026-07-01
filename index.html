@@ -27,6 +27,33 @@
     html{scroll-behavior:auto}
     *{animation:none !important}
   }
+
+  /* ==================== MOBILE / RESPONSIVE ==================== */
+  /* Tablet & down: collapse the text nav, keep logo + ENTRY button */
+  @media (max-width: 900px){
+    header[data-nav]{ padding: 16px 6vw !important; }
+    header[data-nav] nav{ gap: 14px !important; }
+    header[data-nav] nav a:not([data-magnetic]){ display: none !important; }
+    header[data-nav] nav a[data-magnetic]{ padding: 10px 18px !important; }
+  }
+  /* Phones: keep the giant line-reveal headings inside the viewport */
+  @media (max-width: 680px){
+    h1[data-lines]{ font-size: clamp(42px, 13vw, 72px) !important; line-height: 1.04 !important; letter-spacing: -0.02em !important; }
+    h2[data-lines]{ font-size: clamp(23px, 6.6vw, 42px) !important; line-height: 1.2 !important; letter-spacing: -0.01em !important; }
+    /* hero eyebrow label: allow wrap + tighten so it never overflows */
+    section [data-intro][data-delay="0"]{ flex-wrap: wrap !important; }
+    section [data-intro] span[style*=".34em"]{ letter-spacing: .16em !important; font-size: 10px !important; }
+    /* "A DAY" timeline: narrower time column on small screens */
+    section [style*="grid-template-columns:120px 1fr"]{ grid-template-columns: 84px 1fr !important; gap: 18px !important; }
+    section [style*="grid-template-columns:120px 1fr"] > div:first-child{ font-size: 22px !important; }
+    /* hero CTAs: full-width, easy to tap */
+    section [data-intro][data-delay="740"]{ width: 100% !important; }
+    section [data-intro][data-delay="740"] a{ flex: 1 1 auto !important; text-align: center !important; }
+  }
+  /* Small phones: a touch smaller for the longest headings */
+  @media (max-width: 420px){
+    h2[data-lines]{ font-size: clamp(21px, 6.4vw, 34px) !important; }
+  }
 </style>
 </head>
 <body>
