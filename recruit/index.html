@@ -118,7 +118,7 @@ body.menu-open #menu a.m{opacity:1;transform:none}
 #hero h1{font-weight:900;font-size:clamp(38px,8.6vw,118px);line-height:1.24;letter-spacing:.01em}
 #hero h1 .hl{display:inline-block;white-space:nowrap}
 #hero h1 .ch{display:inline-block;opacity:0;transform:translateY(.55em) rotate(4deg);filter:blur(6px)}
-#hero .lead{margin-top:38px;font-family:var(--min);font-size:clamp(13px,1.6vw,17px);letter-spacing:.28em;color:rgba(234,240,246,.82)}
+#hero .lead{margin-top:38px;max-width:860px;font-size:clamp(12.5px,1.25vw,15.5px);letter-spacing:.04em;line-height:2.15;color:rgba(234,240,246,.85)}
 #hero .ctas{margin-top:52px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
 .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;font-family:var(--en);font-size:14px;font-weight:600;letter-spacing:.06em;padding:17px 36px;border-radius:100px;transition:transform .3s,box-shadow .3s,border-color .3s,background .3s}
 .btn.pri{color:#fff;background:linear-gradient(120deg,var(--acc),var(--acc2));box-shadow:0 18px 50px -14px rgba(50,163,191,.55)}
@@ -334,7 +334,8 @@ footer .btm a:hover{color:var(--ink)}
   #hero .ctas{width:100%}
 }
 @media (max-width: 420px){
-  #hero .lead{letter-spacing:.16em}
+  #hero .lead br{display:none}
+  #hero .lead{letter-spacing:.02em;font-size:12.5px;text-align:left}
 }
 </style>
 </head>
@@ -388,12 +389,12 @@ footer .btm a:hover{color:var(--ink)}
   <div class="inner" id="heroInner">
     <div class="eyebrow en" data-hero-fade>RENEWABLE ENERGY × TECHNOLOGY</div>
     <h1 id="heroTitle">
-      <span class="hl">未来のエネルギーを、</span><br>
-      <span class="hl">もっとスマートに。</span>
+      <span class="hl">仕事は、</span><br>
+      <span class="hl">楽しくしたもん勝ち。</span>
     </h1>
-    <div class="lead" data-hero-fade>エネルギー × テクノロジーで、暮らしを次のステージへ。</div>
+    <div class="lead" data-hero-fade>私たちは再生可能エネルギー事業を通じて、“電気の未来”を変えていきます。<br>大手家電量販店とのアライアンスを強みに、業界トップクラスの売上を実現。<br>未経験からでも成果を出せる仕組みと研修体制を整え、20代で年収1,000万円を超えるメンバーも活躍しています。<br>挑戦する勇気を持つ人に、人生を大きく変えるフィールドを提供します。</div>
     <div class="ctas" data-hero-fade>
-      <a class="btn pri" href="#contact">相談してみる →</a>
+      <a class="btn pri" href="#contact">今すぐ応募 →</a>
       <a class="btn gho" href="#about">PRECOを知る</a>
     </div>
   </div>
