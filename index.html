@@ -24,6 +24,10 @@
   a{color:inherit;text-decoration:none}
   img{max-width:100%}
   button{font-family:inherit;cursor:pointer}
+  /* hero rotating scenes (cinematic crossfade) */
+  .hero-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.8s ease;filter:grayscale(.05) contrast(1.03);transform:scale(1.1)}
+  .hero-scene.on{opacity:.42;animation:heroKb 9s linear forwards}
+  @keyframes heroKb{from{transform:scale(1.1)}to{transform:scale(1.22)}}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto}
     *{animation:none !important}
@@ -96,7 +100,10 @@
 <!-- ===================== HERO ===================== -->
 <section id="top" style="position:relative;z-index:1;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:0 5vw">
   <div style="position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none">
-    <img data-parallax="0.06" src="solar-house.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;filter:grayscale(.05) contrast(1.03);transform:scale(1.12)">
+    <img data-hero-scene src="solar-house.jpg" alt="" class="hero-scene on">
+    <img data-hero-scene src="safety-work.jpg" alt="" class="hero-scene">
+    <img data-hero-scene src="assets/hero-sales.png" alt="" class="hero-scene">
+    <img data-hero-scene src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1900&q=72" alt="" class="hero-scene">
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,246,248,.38),rgba(245,246,248,.68))"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,246,248,.72),rgba(245,246,248,.12) 52%,rgba(245,246,248,.46))"></div>
   </div>
@@ -174,17 +181,13 @@
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=70" alt="オール電化" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
       <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">03 · ALL ELECTRIC</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">オール電化</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">エコキュート・IHで、暮らしのエネルギーをまるごと最適化する。</p></div>
     </div>
-    <div data-reveal="y" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
-      <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="assets/hero-sales.png" alt="営業支援・営業教育" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">04 · SALES</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">営業支援・営業教育</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">現場で磨いた“売れる型”を体系化。<br>営業組織の立ち上げと教育を支援。</p></div>
-    </div>
     <div data-reveal="y" data-delay="90" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=70" alt="AIシステム" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">05 · AI / DX</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">AIシステム・DX</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">商談解析・需要予測・業務のデジタル化。<br>テクノロジーを現場に実装する。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">04 · AI / DX</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">AIシステム・DX</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">商談解析・需要予測・業務のデジタル化。<br>テクノロジーを現場に実装する。</p></div>
     </div>
     <div data-reveal="y" data-delay="180" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=70" alt="アライアンス" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">06 · ALLIANCE</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">アライアンス</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">施工店・メーカー・異業種と組み、エネルギーの新しい流通をつくる。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">05 · ALLIANCE</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">アライアンス</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">施工店・メーカー・異業種と組み、エネルギーの新しい流通をつくる。</p></div>
     </div>
   </div>
 </section>
@@ -200,8 +203,8 @@
   </div>
   <div style="overflow:hidden;padding:40px 0 44px;border-top:1px solid rgba(10,26,47,.08);border-bottom:1px solid rgba(10,26,47,.08);margin:60px 0">
     <div data-marquee style="display:flex;gap:0;white-space:nowrap;will-change:transform;font-family:Inter,sans-serif;font-weight:800;font-size:clamp(30px,5vw,72px);letter-spacing:-.02em">
-      <span style="padding:0 40px">SOLAR</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">蓄電池</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">AI</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">DX</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">オール電化</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">ALLIANCE</span><span style="padding:0 40px;color:#32A3BF">·</span>
-      <span style="padding:0 40px">SOLAR</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">蓄電池</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">AI</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">DX</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">オール電化</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">ALLIANCE</span><span style="padding:0 40px;color:#32A3BF">·</span>
+      <span style="padding:0 40px">SOLAR</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">蓄電池</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">AI</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">オール電化</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">ALLIANCE</span><span style="padding:0 40px;color:#32A3BF">·</span>
+      <span style="padding:0 40px">SOLAR</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">蓄電池</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">AI</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">オール電化</span><span style="padding:0 40px;color:#32A3BF">·</span><span style="padding:0 40px">ALLIANCE</span><span style="padding:0 40px;color:#32A3BF">·</span>
     </div>
   </div>
   <div style="padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
@@ -346,6 +349,7 @@ class PrecoBrand {
     this.wireNav();
     this.wireMarquee();
     this.wireForm();
+    this.wireHeroScenes();
     this.loop = this.loop.bind(this);
     this._raf = requestAnimationFrame(this.loop);
     requestAnimationFrame(() => this.playIntro());
@@ -518,6 +522,16 @@ class PrecoBrand {
       requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
+  }
+
+  wireHeroScenes() {
+    const scenes = [...document.querySelectorAll('[data-hero-scene]')];
+    if (scenes.length < 2 || this.reduced) return;
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % scenes.length;
+      scenes.forEach((s, k) => s.classList.toggle('on', k === i));
+    }, 5000);
   }
 
   wireForm() {
