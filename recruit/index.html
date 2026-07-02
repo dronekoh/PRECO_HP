@@ -146,12 +146,13 @@ section.blk{position:relative;padding:min(20vh,190px) 0}
 .sec-head .jp{font-size:13px;color:var(--dim);letter-spacing:.1em}
 h2.big{font-weight:900;font-size:clamp(32px,6.4vw,96px);line-height:1.28;letter-spacing:-.01em}
 h2.big .accent{color:var(--acc)}
-h2.big .line{display:block;overflow:hidden;padding-bottom:.08em}
+h2.big .line{display:block;overflow:hidden;padding-bottom:.08em;white-space:nowrap}
 h2.big .line i{display:block;font-style:normal;transform:translateY(115%)}
 [data-r]{opacity:0}
 .lead-p{font-size:clamp(14px,1.35vw,17px);line-height:2.2;color:var(--mut)}
 
 /* ---------- about ---------- */
+#about h2.big{font-size:clamp(24px,4.5vw,72px)}
 #about .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,100px);align-items:end;margin-top:70px}
 #about .visual{position:relative;height:clamp(340px,52vh,560px);border-radius:20px;overflow:hidden}
 #about .visual .ph{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.15)}
@@ -316,6 +317,7 @@ footer .btm a:hover{color:var(--ink)}
   footer .top{grid-template-columns:1fr 1fr}
 }
 @media (max-width: 780px){
+  #about h2.big{font-size:clamp(18px,5.9vw,24px)}
   #nav .links{display:none}
   #burger{display:block}
   section.blk{padding:min(14vh,120px) 0}
@@ -697,9 +699,9 @@ footer .btm a:hover{color:var(--ink)}
       </div>
       <div class="col">
         <h5>ACCESS</h5>
+        <p style="margin:0 0 12px;font-size:12px;color:var(--mut);line-height:1.9">東京都新宿区西新宿3丁目3番13号 西新宿水間ビル6階</p>
         <div class="map">
-          <!-- 本社住所が確定したら q= を住所に差し替えてください -->
-          <iframe src="https://www.google.com/maps?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEPRECO&output=embed" loading="lazy" title="PRECO MAP"></iframe>
+          <iframe src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E8%A5%BF%E6%96%B0%E5%AE%BF3%E4%B8%81%E7%9B%AE3%E7%95%AA13%E5%8F%B7%20%E8%A5%BF%E6%96%B0%E5%AE%BF%E6%B0%B4%E9%96%93%E3%83%93%E3%83%AB&output=embed" loading="lazy" title="PRECO MAP"></iframe>
         </div>
       </div>
     </div>
