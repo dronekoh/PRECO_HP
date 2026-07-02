@@ -177,9 +177,9 @@ h2.big .line i{display:block;font-style:normal;transform:translateY(115%)}
 #numbers .note{margin-top:22px;font-size:11px;color:var(--dim);text-align:right}
 
 /* ---------- business (horizontal) ---------- */
-#business .rail{display:flex;gap:20px;overflow-x:auto;padding:10px 5vw 34px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;cursor:grab;scrollbar-width:none}
+#business .rail{display:flex;gap:20px;overflow-x:auto;padding:10px 5vw 34px;-webkit-overflow-scrolling:touch;cursor:grab;scrollbar-width:none}
 #business .rail::-webkit-scrollbar{display:none}
-#business .card{position:relative;flex:0 0 clamp(260px,30vw,380px);height:clamp(380px,54vh,520px);border-radius:22px;overflow:hidden;scroll-snap-align:start;border:1px solid var(--line);background:linear-gradient(160deg,#0d1524,#0a1018);transition:transform .5s cubic-bezier(.16,1,.3,1),border-color .4s;transform-style:preserve-3d}
+#business .card{position:relative;flex:0 0 clamp(260px,30vw,380px);height:clamp(380px,54vh,520px);border-radius:22px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#0d1524,#0a1018);transition:transform .5s cubic-bezier(.16,1,.3,1),border-color .4s;transform-style:preserve-3d}
 #business .card:hover{transform:translateY(-12px);border-color:rgba(50,163,191,.5)}
 #business .card .ph{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.5;transition:opacity .5s,transform .8s cubic-bezier(.16,1,.3,1)}
 #business .card:hover .ph{opacity:.72;transform:scale(1.06)}
@@ -260,6 +260,7 @@ h2.big .line i{display:block;font-style:normal;transform:translateY(115%)}
 #sns .s{position:relative;overflow:hidden;border-radius:22px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(12px);padding:clamp(30px,3.6vw,48px);display:flex;flex-direction:column;gap:14px;transition:border-color .4s,transform .4s}
 #sns .s:hover{border-color:rgba(50,163,191,.5);transform:translateY(-6px)}
 #sns .s .glow{position:absolute;top:-40%;right:-20%;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(50,163,191,.22),transparent 65%);pointer-events:none}
+#sns .s .sns-icn{width:42px;height:42px;color:var(--acc)}
 #sns .s .tag{font-family:var(--en);font-size:11px;letter-spacing:.32em;color:var(--acc)}
 #sns .s h3{font-size:clamp(20px,2.2vw,28px);font-weight:900}
 #sns .s p{font-size:13px;color:var(--mut);line-height:2}
@@ -375,7 +376,7 @@ footer .btm a:hover{color:var(--ink)}
   <a class="m" href="#business" style="transition-delay:.18s"><small>03</small>事業内容</a>
   <a class="m" href="#tech" style="transition-delay:.24s"><small>04</small>テクノロジー</a>
   <a class="m" href="#contact" style="transition-delay:.30s"><small>05</small>お問い合わせ</a>
-  <div class="foot en"><span>© PRECO Inc.</span><span>INSTAGRAM</span><span>TIKTOK</span></div>
+  <div class="foot en"><span>© PRECO Inc.</span><span>INSTAGRAM</span><span>LINE</span></div>
 </div>
 
 <!-- =============== HERO =============== -->
@@ -441,10 +442,10 @@ footer .btm a:hover{color:var(--ink)}
       <span class="line"><i>勢いは、<span class="accent">数字</span>に出る。</i></span>
     </h2>
     <div class="panel" data-r="y">
-      <div class="cell"><div class="v"><b data-count="4200">0</b><span>件+</span></div><div class="l">累計契約件数</div></div>
-      <div class="cell"><div class="v"><b data-count="1800">0</b><span>件</span></div><div class="l">年間施工件数</div></div>
-      <div class="cell"><div class="v"><b data-count="120">0</b><span>名</span></div><div class="l">営業スタッフ数</div></div>
-      <div class="cell"><div class="v"><b data-count="90">0</b><span>社</span></div><div class="l">提携施工店数</div></div>
+      <div class="cell"><div class="v"><b data-count="1500">0</b><span>件+</span></div><div class="l">累計契約件数</div></div>
+      <div class="cell"><div class="v"><b data-count="1370">0</b><span>件</span></div><div class="l">年間施工件数</div></div>
+      <div class="cell"><div class="v"><b data-count="82">0</b><span>名</span></div><div class="l">営業スタッフ数</div></div>
+      <div class="cell"><div class="v"><b data-count="30">0</b><span>社</span></div><div class="l">提携施工店数</div></div>
       <div class="cell"><div class="v"><b data-count="47">0</b><span>都道府県</span></div><div class="l">対応エリア</div></div>
       <div class="cell"><div class="v"><b data-count="98.2" data-dec="1">0</b><span>%</span></div><div class="l">顧客満足度</div></div>
     </div>
@@ -613,17 +614,20 @@ footer .btm a:hover{color:var(--ink)}
       <!-- 実アカウントのURLに差し替えてください -->
       <a class="s" data-r="y" href="https://www.instagram.com/" target="_blank" rel="noopener">
         <div class="glow"></div>
+        <svg class="sns-icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"/></svg>
         <div class="tag en">INSTAGRAM</div>
         <h3>現場と、日常と、仲間。</h3>
         <p>施工現場の裏側、社員の素顔、イベントの様子。PRECOのカルチャーはここに出る。</p>
         <span class="lnk en">FOLLOW US <i></i>→</span>
       </a>
-      <a class="s" data-r="y" data-d="120" href="https://www.tiktok.com/" target="_blank" rel="noopener">
+      <!-- LINEの友だち追加URLが決まったら href を差し替えてください -->
+      <a class="s" data-r="y" data-d="120" href="#">
         <div class="glow"></div>
-        <div class="tag en">TIKTOK</div>
-        <h3>エネルギーを、面白く。</h3>
-        <p>太陽光・蓄電池のリアルな疑問に、現場のプロが答える。知るほど、賢くなる。</p>
-        <span class="lnk en">WATCH NOW <i></i>→</span>
+        <svg class="sns-icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.3c-5.1 0-9.2 3.2-9.2 7.2 0 3.6 3.3 6.5 7.7 7.1-.1.7-.4 1.9-.5 2.2-.1.4.2.6.5.4.4-.2 2.9-1.9 4.1-2.9 3.8-.5 6.6-3.4 6.6-6.8 0-4-4.1-7.2-9.2-7.2z"/><path d="M8 10.4v3.4M11 10.4v3.4M14.2 10.4v3.4l2.2-3.4v3.4" stroke-width="1.3"/></svg>
+        <div class="tag en">LINE</div>
+        <h3>LINEで、気軽に相談。</h3>
+        <p>質問も、応募の相談も、まずはLINEから。友だち追加で、すぐつながれます。</p>
+        <span class="lnk en">ADD FRIEND <i></i>→</span>
       </a>
     </div>
   </div>
@@ -642,7 +646,6 @@ footer .btm a:hover{color:var(--ink)}
           <span class="line"><i>しませんか<span class="accent">。</span></i></span>
         </h2>
         <p data-r="y">太陽光・蓄電池のご相談から、営業支援・アライアンスのご提案まで。まずは、お気軽にどうぞ。</p>
-        <div class="tel en" data-r="y"><small>PHONE</small>0120-000-000</div>
       </div>
       <form class="glass" data-r="y" id="contactForm">
         <label class="en" for="f-name">NAME</label>
@@ -704,7 +707,7 @@ footer .btm a:hover{color:var(--ink)}
       <div class="lgl">
         <a href="#">PRIVACY POLICY</a>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener">INSTAGRAM</a>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TIKTOK</a>
+        <a href="#">LINE</a>
       </div>
     </div>
   </div>
@@ -916,6 +919,37 @@ $$('#bizRail, #flowRail').forEach(rail => {
   addEventListener('pointerup', () => { down = false; rail.style.cursor = 'grab'; });
   rail.addEventListener('pointermove', e => { if (!down) return; rail.scrollLeft = sl - (e.clientX - sx); });
 });
+
+/* ---------- business rail: endless loop ---------- */
+(() => {
+  const rail = document.getElementById('bizRail');
+  if (!rail) return;
+  const originals = [...rail.children];
+  if (originals.length < 2) return;
+  // two extra copies so the strip can wrap in both directions on any screen
+  for (let set = 0; set < 2; set++) {
+    originals.forEach(card => {
+      const c = card.cloneNode(true);
+      c.removeAttribute('data-r');
+      c.removeAttribute('data-d');
+      c.setAttribute('aria-hidden', 'true');
+      c.style.opacity = '1';
+      c.style.transform = 'none';
+      rail.appendChild(c);
+    });
+  }
+  let period = 0;
+  const measure = () => { period = rail.children[originals.length].offsetLeft - rail.children[0].offsetLeft; };
+  measure();
+  addEventListener('resize', measure);
+  rail.scrollLeft = period; // start in the middle copy
+  let wrapping = false;
+  rail.addEventListener('scroll', () => {
+    if (wrapping || !period) return;
+    if (rail.scrollLeft < period * 0.5) { wrapping = true; rail.scrollLeft += period; wrapping = false; }
+    else if (rail.scrollLeft > period * 1.5) { wrapping = true; rail.scrollLeft -= period; wrapping = false; }
+  }, { passive: true });
+})();
 
 /* ---------- tilt (desktop) ---------- */
 if (!isTouch && !reduced) $$('[data-tilt]').forEach(card => {
