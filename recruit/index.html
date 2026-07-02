@@ -394,7 +394,6 @@ footer .btm a:hover{color:var(--ink)}
       <span class="hl">仕事は、</span><br>
       <span class="hl">楽しくしたもん勝ち。</span>
     </h1>
-    <div class="lead" data-hero-fade>私たちは再生可能エネルギー事業を通じて、“電気の未来”を変えていきます。<br>大手家電量販店とのアライアンスを強みに、業界トップクラスの売上を実現。<br>未経験からでも成果を出せる仕組みと研修体制を整え、20代で年収1,000万円を超えるメンバーも活躍しています。<br>挑戦する勇気を持つ人に、人生を大きく変えるフィールドを提供します。</div>
     <div class="ctas" data-hero-fade>
       <a class="btn pri" href="#contact">今すぐ応募 →</a>
       <a class="btn gho" href="#about">PRECOを知る</a>
@@ -441,9 +440,10 @@ footer .btm a:hover{color:var(--ink)}
 <section class="blk" id="numbers">
   <div class="wrap">
     <div class="sec-head" data-r="y"><span class="no en">02 — DATA</span><span class="jp">数字で見るPRECO</span></div>
-    <h2 class="big" style="margin-bottom:64px">
+    <h2 class="big" style="margin-bottom:40px">
       <span class="line"><i>勢いは、<span class="accent">数字</span>に出る。</i></span>
     </h2>
+    <p data-r="y" style="opacity:0;margin:0 0 56px;max-width:880px;font-size:14.5px;line-height:2.15;color:var(--mut)">私たちは再生可能エネルギー事業を通じて、“電気の未来”を変えていきます。<br>大手家電量販店とのアライアンスを強みに、業界トップクラスの売上を実現。<br>未経験からでも成果を出せる仕組みと研修体制を整え、20代で年収1,000万円を超えるメンバーも活躍しています。<br>挑戦する勇気を持つ人に、人生を大きく変えるフィールドを提供します。</p>
     <div class="panel" data-r="y">
       <div class="cell"><div class="v"><b data-count="1500">0</b><span>件+</span></div><div class="l">累計契約件数</div></div>
       <div class="cell"><div class="v"><b data-count="1370">0</b><span>件</span></div><div class="l">年間施工件数</div></div>
@@ -615,7 +615,7 @@ footer .btm a:hover{color:var(--ink)}
     </h2>
     <div class="grid">
       <!-- 実アカウントのURLに差し替えてください -->
-      <a class="s" data-r="y" href="https://www.instagram.com/" target="_blank" rel="noopener">
+      <a class="s" data-r="y" href="https://www.instagram.com/preco.inc_official/" target="_blank" rel="noopener">
         <div class="glow"></div>
         <svg class="sns-icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"/></svg>
         <div class="tag en">INSTAGRAM</div>
@@ -709,7 +709,7 @@ footer .btm a:hover{color:var(--ink)}
       <span>© 2026 PRECO Inc. All rights reserved.</span>
       <div class="lgl">
         <a href="#">PRIVACY POLICY</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">INSTAGRAM</a>
+        <a href="https://www.instagram.com/preco.inc_official/" target="_blank" rel="noopener">INSTAGRAM</a>
         <a href="#">LINE</a>
       </div>
     </div>
@@ -1032,7 +1032,7 @@ $('#contactForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = e.target;
   const body = ['お名前: ' + f['お名前'].value, '電話番号: ' + f['電話番号'].value, 'メール: ' + f['メールアドレス'].value, '種別: ' + f['ご相談内容'].value, '', f['メッセージ'].value].join('\n');
-  location.href = 'mailto:info@preco-inc.co.jp?subject=' + encodeURIComponent('【HP】お問い合わせ - ' + f['お名前'].value) + '&body=' + encodeURIComponent(body);
+  location.href = 'mailto:recruit@preco-inc.co.jp?subject=' + encodeURIComponent('【採用サイト】お問い合わせ - ' + f['お名前'].value) + '&body=' + encodeURIComponent(body);
 });
 })();
 </script>
