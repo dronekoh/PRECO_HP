@@ -36,6 +36,12 @@
     header[data-nav] nav a:not([data-magnetic]){ display: none !important; }
     header[data-nav] nav a[data-magnetic]{ padding: 10px 18px !important; }
   }
+  @media (max-width: 900px){
+    #numgrid{ grid-template-columns: repeat(2,1fr) !important; }
+  }
+  @media (max-width: 560px){
+    #numgrid{ grid-template-columns: 1fr !important; }
+  }
   @media (max-width: 680px){
     h1[data-lines]{ font-size: clamp(26px, 8.6vw, 64px) !important; line-height: 1.3 !important; letter-spacing: -0.02em !important; }
     h1[data-lines] [data-li]{ white-space: nowrap !important; }
@@ -126,8 +132,8 @@
     <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-li style="display:block;transform:translateY(115%)"><span style="color:#32A3BF">未来</span>をつくる会社だ。</span></span>
   </h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:80px;max-width:1000px">
-    <p data-reveal="y" data-delay="0" style="opacity:0;margin:0;font-size:16px;line-height:2;color:#5b6472">太陽光、蓄電池、オール電化——。そのすべては手段にすぎない。PRECOが届けているのは、電気ではなく「これからの暮らし」。ひとつの提案が、その家の30年先を変えていく。</p>
-    <p data-reveal="y" data-delay="120" style="opacity:0;margin:0;font-size:16px;line-height:2;color:#5b6472">営業・施工・テクノロジーを一気通貫でつなぎ、再生可能エネルギーをもっと身近に、もっとスマートに。AI・DXを武器に、エネルギー業界の当たり前を塗り替えていく。</p>
+    <p data-reveal="y" data-delay="0" style="opacity:0;margin:0;font-size:16px;line-height:2;color:#5b6472">太陽光、蓄電池、オール電化——。<br>そのすべては手段にすぎない。<br>PRECOが届けているのは、電気ではなく「これからの暮らし」。<br>ひとつの提案が、その家の30年先を変えていく。</p>
+    <p data-reveal="y" data-delay="120" style="opacity:0;margin:0;font-size:16px;line-height:2;color:#5b6472">営業・施工・テクノロジーを一気通貫でつなぎ、再生可能エネルギーをもっと身近に、もっとスマートに。<br>AI・DXを武器に、エネルギー業界の当たり前を塗り替えていく。</p>
   </div>
 </section>
 
@@ -137,11 +143,11 @@
     <span style="font-family:Inter,sans-serif;font-size:12px;font-weight:600;letter-spacing:.3em;color:#32A3BF">02 — BY THE NUMBERS</span>
     <span style="font-size:14px;color:#8a95a3">数字で見る PRECO</span>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:rgba(10,26,47,.08);border:1px solid rgba(10,26,47,.08);border-radius:22px;overflow:hidden">
-    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="4200" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap;white-space:nowrap">件+</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">累計契約件数</div></div>
-    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="1800" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">件</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">年間施工件数</div></div>
-    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="120" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">名</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">営業スタッフ数</div></div>
-    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="90" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">社</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">提携施工店数</div></div>
+  <div id="numgrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(10,26,47,.08);border:1px solid rgba(10,26,47,.08);border-radius:22px;overflow:hidden">
+    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="1500" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap;white-space:nowrap">件+</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">累計契約件数</div></div>
+    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="1370" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">件</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">年間施工件数</div></div>
+    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="82" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">名</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">営業スタッフ数</div></div>
+    <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="30" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">社</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">提携施工店数</div></div>
     <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="47" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">都道府県</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">対応エリア</div></div>
     <div data-tilt style="padding:44px 28px;background:#ffffff"><div style="display:flex;align-items:baseline;color:#0A1A2F;flex-wrap:nowrap;min-width:0"><span data-count="98.2" data-dec="1" style="font-family:Inter,sans-serif;font-size:clamp(36px,2.9vw,58px);font-weight:800;letter-spacing:-.03em;white-space:nowrap">0</span><span style="font-size:18px;font-weight:700;margin-left:4px;color:#32A3BF;white-space:nowrap">%</span></div><div style="margin-top:14px;font-size:13px;color:#5b6472">顧客満足度</div></div>
   </div>
@@ -158,11 +164,11 @@
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
     <div data-reveal="y" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="solar-house.jpg" alt="住宅用太陽光" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">01 · SOLAR</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">住宅用太陽光</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">屋根の上から、家計と環境を変える。設計から施工、アフターまで一気通貫。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">01 · SOLAR</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">住宅用太陽光</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">屋根の上から、家計と環境を変える。<br>設計から施工、アフターまで一気通貫。</p></div>
     </div>
     <div data-reveal="y" data-delay="90" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=900&q=70" alt="蓄電池・V2H" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">02 · BATTERY / V2H</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">蓄電池・V2H</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">創った電気を、賢く使う。停電にも、電気代高騰にも強い家へ。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">02 · BATTERY / V2H</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">蓄電池・V2H</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">創った電気を、賢く使う。<br>停電にも、電気代高騰にも強い家へ。</p></div>
     </div>
     <div data-reveal="y" data-delay="180" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=70" alt="オール電化" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
@@ -170,11 +176,11 @@
     </div>
     <div data-reveal="y" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="assets/hero-sales.png" alt="営業支援・営業教育" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">04 · SALES</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">営業支援・営業教育</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">現場で磨いた“売れる型”を体系化。営業組織の立ち上げと教育を支援。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">04 · SALES</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">営業支援・営業教育</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">現場で磨いた“売れる型”を体系化。<br>営業組織の立ち上げと教育を支援。</p></div>
     </div>
     <div data-reveal="y" data-delay="90" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=70" alt="AIシステム" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
-      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">05 · AI / DX</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">AIシステム・DX</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">商談解析・需要予測・業務のデジタル化。テクノロジーを現場に実装する。</p></div>
+      <div style="padding:26px 26px 30px"><div style="font-family:Inter,sans-serif;font-size:12px;color:#32A3BF;letter-spacing:.08em">05 · AI / DX</div><div style="margin:8px 0 12px;font-size:20px;font-weight:700">AIシステム・DX</div><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">商談解析・需要予測・業務のデジタル化。<br>テクノロジーを現場に実装する。</p></div>
     </div>
     <div data-reveal="y" data-delay="180" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
       <div style="position:relative;height:240px;overflow:hidden;background:linear-gradient(120deg,#141a2e,#32A3BF)"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=70" alt="アライアンス" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))"></div></div>
@@ -199,10 +205,10 @@
     </div>
   </div>
   <div style="padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
-    <div data-reveal="scaleIn" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">01</div><h3 style="margin:14px 0 10px;font-size:20px">補助金サポート</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">国・自治体の制度を熟知。申請までまるごと代行し、負担を最小に。</p></div>
-    <div data-reveal="scaleIn" data-delay="90" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">02</div><h3 style="margin:14px 0 10px;font-size:20px">スピード対応</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">相談から施工まで最短ルートで。意思決定の速さが、PRECOの文化。</p></div>
-    <div data-reveal="scaleIn" data-delay="180" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">03</div><h3 style="margin:14px 0 10px;font-size:20px">施工品質</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">提携施工店と自社基準のダブルチェック。10年先も安心の品質管理。</p></div>
-    <div data-reveal="scaleIn" data-delay="270" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">04</div><h3 style="margin:14px 0 10px;font-size:20px">全国対応</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">47都道府県をカバーするネットワーク。どこに住んでいても、届く。</p></div>
+    <div data-reveal="scaleIn" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">01</div><h3 style="margin:14px 0 10px;font-size:20px">補助金サポート</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">国・自治体の制度を熟知。<br>申請までまるごと代行し、負担を最小に。</p></div>
+    <div data-reveal="scaleIn" data-delay="90" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">02</div><h3 style="margin:14px 0 10px;font-size:20px">スピード対応</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">相談から施工まで最短ルートで。<br>意思決定の速さが、PRECOの文化。</p></div>
+    <div data-reveal="scaleIn" data-delay="180" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">03</div><h3 style="margin:14px 0 10px;font-size:20px">施工品質</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">提携施工店と自社基準のダブルチェック。<br>10年先も安心の品質管理。</p></div>
+    <div data-reveal="scaleIn" data-delay="270" data-tilt style="opacity:0;padding:34px;border-radius:18px;border:1px solid rgba(10,26,47,.1);background:#ffffff"><div style="font-family:Inter,sans-serif;font-size:13px;color:#32A3BF;font-weight:700">04</div><h3 style="margin:14px 0 10px;font-size:20px">全国対応</h3><p style="margin:0;font-size:14px;line-height:1.9;color:#5b6472">47都道府県をカバーするネットワーク。<br>どこに住んでいても、届く。</p></div>
   </div>
 </section>
 
@@ -232,7 +238,7 @@
         <span style="display:block;overflow:hidden;padding-bottom:.04em"><span data-li style="display:block;transform:translateY(115%)"><span style="color:#32A3BF">信頼</span>になる。</span></span>
       </h2>
     </div>
-    <span data-reveal="y" style="opacity:0;font-size:14px;color:#8a95a3;max-width:280px;line-height:1.9;padding-bottom:8px">累計4,200件超。ひとつひとつの現場が、PRECOの名刺です。</span>
+    <span data-reveal="y" style="opacity:0;font-size:14px;color:#8a95a3;max-width:280px;line-height:1.9;padding-bottom:8px">累計1,500件超。ひとつひとつの現場が、PRECOの名刺です。</span>
   </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
     <div data-reveal="y" data-tilt style="opacity:0;border-radius:20px;overflow:hidden;border:1px solid rgba(10,26,47,.1);background:#ffffff">
@@ -263,14 +269,14 @@
         <h2 data-lines style="margin:0 0 18px;font-weight:900;font-size:clamp(28px,4.4vw,64px);line-height:1.15;letter-spacing:-.02em">
           <span style="display:block;overflow:hidden;padding-bottom:.04em"><span data-li style="display:block;transform:translateY(115%)">仲間も、<span style="color:#32A3BF">募集中</span>。</span></span>
         </h2>
-        <p data-reveal="y" style="opacity:0;margin:0;font-size:15px;line-height:2;color:#5b6472">未経験スタート100%。エネルギーの未来を一緒につくる仲間を探しています。まずは採用サイトで、リアルなPRECOを覗いてみてください。</p>
+        <p data-reveal="y" style="opacity:0;margin:0;font-size:15px;line-height:2;color:#5b6472">未経験スタート100%。<br>エネルギーの未来を一緒につくる仲間を探しています。<br>まずは採用サイトで、リアルなPRECOを覗いてみてください。</p>
       </div>
       <div data-reveal="y" data-delay="150" style="opacity:0;display:flex;flex-direction:column;align-items:flex-start;gap:22px">
         <div style="display:flex">
           <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=70" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 14px rgba(10,26,47,.18)">
           <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=70" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 14px rgba(10,26,47,.18);margin-left:-14px">
           <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=70" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 14px rgba(10,26,47,.18);margin-left:-14px">
-          <span style="display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:linear-gradient(120deg,#32A3BF,#14479E);color:#fff;font-family:Inter,sans-serif;font-size:12px;font-weight:700;border:3px solid #fff;box-shadow:0 4px 14px rgba(10,26,47,.18);margin-left:-14px">120+</span>
+          <span style="display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:linear-gradient(120deg,#32A3BF,#14479E);color:#fff;font-family:Inter,sans-serif;font-size:12px;font-weight:700;border:3px solid #fff;box-shadow:0 4px 14px rgba(10,26,47,.18);margin-left:-14px">80+</span>
         </div>
         <a data-magnetic href="recruit.html" style="position:relative;overflow:hidden;font-family:Inter,sans-serif;font-size:15px;font-weight:600;color:#fff;padding:17px 36px;border-radius:100px;background:linear-gradient(120deg,#32A3BF,#14479E);box-shadow:0 18px 50px -14px rgba(50,163,191,.75)"><span data-mag-inner style="display:inline-block">採用サイトを見る →</span></a>
       </div>
@@ -288,7 +294,7 @@
         <span style="display:block;overflow:hidden;padding-bottom:.04em"><span data-li style="display:block;transform:translateY(115%)">まずは、</span></span>
         <span style="display:block;overflow:hidden;padding-bottom:.04em"><span data-li style="display:block;transform:translateY(115%)"><span style="color:#32A3BF">無料相談</span>から。</span></span>
       </h2>
-      <p data-reveal="y" data-delay="150" style="opacity:0;margin:36px 0 0;max-width:440px;font-size:15px;line-height:2;color:#4a5563">電気代のこと、補助金のこと、屋根に載るかどうか。話を聞くだけでも大歓迎です。お気軽にどうぞ。</p>
+      <p data-reveal="y" data-delay="150" style="opacity:0;margin:36px 0 0;max-width:440px;font-size:15px;line-height:2;color:#4a5563">電気代のこと、補助金のこと、屋根に載るかどうか。<br>話を聞くだけでも大歓迎です。<br>お気軽にどうぞ。</p>
     </div>
     <form data-contact data-reveal="y" data-delay="200" id="contactForm" style="opacity:0;border:1px solid rgba(10,26,47,.1);border-radius:24px;background:rgba(255,255,255,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:clamp(28px,3.4vw,46px);box-shadow:0 30px 80px -30px rgba(10,26,47,.25)">
       <label style="display:block;font-family:Inter,sans-serif;font-size:10px;letter-spacing:.3em;color:#8a95a3;margin:0 0 8px" for="f-name">NAME</label>
