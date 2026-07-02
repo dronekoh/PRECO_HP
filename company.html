@@ -72,7 +72,7 @@ button{font-family:inherit;cursor:pointer}
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;transition:background .4s,backdrop-filter .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
 #nav.sc{background:rgba(5,7,12,.68);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:14px 5vw;border-color:var(--line)}
 #nav .logo{display:flex;flex-direction:column;line-height:1;position:relative;z-index:112}
-#nav .logo img{height:28px;width:auto}
+#nav .logo img{height:28px;width:auto;align-self:flex-start;object-fit:contain}
 #nav .logo span{font-family:var(--en);font-size:8px;letter-spacing:.4em;color:var(--acc);margin-top:5px}
 #nav .links{display:flex;align-items:center;gap:34px}
 #nav .links a{font-family:var(--en);font-size:12px;letter-spacing:.12em;color:var(--mut);transition:color .3s;position:relative}
@@ -422,7 +422,7 @@ footer .btm a:hover{color:var(--ink)}
     </h2>
     <div class="grid">
       <div class="visual mask" data-r="mask">
-        <div class="ph" data-plx="0.12" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=75')"></div>
+        <div class="ph" data-plx="0.12" style="background-image:url('solar-house.jpg')"></div>
         <div class="cap en">RESIDENTIAL SOLAR / JAPAN</div>
       </div>
       <div>
@@ -463,7 +463,7 @@ footer .btm a:hover{color:var(--ink)}
   </div>
   <div class="rail" id="bizRail">
     <div class="card" data-r="y">
-      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=70')"></div>
+      <div class="ph" style="background-image:url('solar-house.jpg')"></div>
       <div class="sc"></div><div class="en-tag en">SOLAR</div>
       <div class="tx"><div class="no en">01</div><h3>住宅用太陽光</h3><p>屋根の上から、家計と環境を変える。設計から施工、アフターまで一気通貫。</p></div>
     </div>
@@ -592,7 +592,7 @@ footer .btm a:hover{color:var(--ink)}
       <span class="line"><i>実績が、<span class="accent">信頼</span>になる。</i></span>
     </h2>
     <div class="grid">
-      <div class="w" data-r="y"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=70')"></div><div class="sc"></div><div class="tx"><div class="tg en">SOLAR / 6.5kW</div><h3>戸建て太陽光システム</h3><p>電気代 約68%削減</p></div></div>
+      <div class="w" data-r="y"><div class="ph" style="background-image:url('solar-house.jpg')"></div><div class="sc"></div><div class="tx"><div class="tg en">SOLAR / 6.5kW</div><h3>戸建て太陽光システム</h3><p>電気代 約68%削減</p></div></div>
       <div class="w" data-r="y" data-d="90"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=70')"></div><div class="sc"></div><div class="tx"><div class="tg en">V2H + BATTERY</div><h3>EV連携・蓄電システム</h3><p>停電時も丸2日稼働</p></div></div>
       <div class="w" data-r="y" data-d="180"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=70')"></div><div class="sc"></div><div class="tx"><div class="tg en">ALL ELECTRIC</div><h3>オール電化リノベーション</h3><p>光熱費を一本化</p></div></div>
       <div class="w" data-r="y" data-d="90"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=70')"></div><div class="sc"></div><div class="tx"><div class="tg en">SOLAR / 9.8kW</div><h3>大容量パネル設置</h3><p>売電+自家消費の最適化</p></div></div>
@@ -726,7 +726,7 @@ const outCubic = t => 1 - Math.pow(1 - t, 3);
 /* ---------- hero scenes (cinematic crossfade) ---------- */
 const SCENES = [
   { nm: 'SALES',   img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1900&q=72', grad: 'linear-gradient(135deg,#101826,#1b2a3d)' },
-  { nm: 'SOLAR',   img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1900&q=72', grad: 'linear-gradient(135deg,#0a1a3a,#0e3742)' },
+  { nm: 'SOLAR',   img: 'solar-house.jpg', grad: 'linear-gradient(135deg,#0a1a3a,#0e3742)' },
   { nm: 'FIELD',   img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1900&q=72', grad: 'linear-gradient(135deg,#141a24,#20303f)' },
   { nm: 'AI / DX', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1900&q=72', grad: 'linear-gradient(135deg,#0b1220,#14213a)' },
   { nm: 'CITY',    img: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1900&q=72', grad: 'linear-gradient(135deg,#0a0f1c,#1a2440)' },
